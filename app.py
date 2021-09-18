@@ -22,7 +22,7 @@ def inputs():
         output = 'Positive Review'
     else:
         output='Negative Review'
-    return render_template('output.html',predicted_text = pwdoutput)
+    return render_template('output.html',predicted_text = output)
 
 @app.route('/again',methods=['POST'])
 def again():
